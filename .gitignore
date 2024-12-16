@@ -1,23 +1,35 @@
-# IntelliJ IDEA
+# IntelliJ IDEA 관련 설정 파일 및 폴더
 .idea/
 *.iml
 *.iws
 out/
 
+# Eclipse 및 기타 IDE 설정 파일
+.project
+.classpath
+.factorypath
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+
 # Java 빌드 폴더
 target/
 build/
 
-# Gradle
+# Gradle 관련 파일 및 폴더
 .gradle/
 !gradle/wrapper/gradle-wrapper.properties
 
-# Logs
+# 로그 파일
 logs/
 *.log
 **/log/
 
-# 자바 린트와 검사 도구
+# 자바 린트 및 검사 도구 설정 파일
 .checkstyle/
 .findbugs/
 .spotbugs/
@@ -25,31 +37,30 @@ logs/
 .jacoco/
 .sonar/
 
-# Spring Boot
-# Spring Boot devtools를 위한 재시작 관련 파일들
+# Spring Boot 관련 파일
 .spring-boot-devtools.properties
-
-# Spring Boot application properties files
 application-*.properties
 application-*.yml
 
-# React 및 Node.js
+# React 및 Node.js 관련 파일 및 폴더
 node_modules/
+dist/
+dist-ssr/
+*.local
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # 환경 파일
 .env
 .env.local
 .env.*.local
 
-# Temporary files
+# 임시 파일 및 폴더
 tmp/
 temp/
 
-# 기타 IDE 설정 파일
-.project
-.classpath
-.factorypath
-
+# 에디터에 의해 생성된 파일
+*.sw?
